@@ -166,6 +166,6 @@ app.post('/articles/:id', function(req, res){
 
 
 // listen on port 3000
-app.listen(8080, function() {
-  console.log('App running on port 8080!');
+app.listen(process.env.PORT || 8888, function(){
+	console.log('App Running on Port 8888');
 });
