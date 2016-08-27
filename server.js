@@ -23,7 +23,7 @@ app.use(express.static('public'));
 
 
 // Database configuration with mongoose
-mongoose.connect('mongodb://localhost/week18day3mongoose');
+mongoose.connect('mongodb://heroku_qn09bd2f:3jhnhqp7d6u4krbph0947280bs@ds017726.mlab.com:17726/heroku_qn09bd2f');
 var db = mongoose.connection;
 
 // show any mongoose errors
@@ -166,6 +166,6 @@ app.post('/articles/:id', function(req, res){
 
 
 // listen on port 3000
-app.listen(3000, function() {
-  console.log('App running on port 3000!');
+app.listen(8080, function() {
+  console.log('App running on port 8080!');
 });
